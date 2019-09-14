@@ -26,7 +26,7 @@ class Course:
         """
         给课程添加一个教师
         """
-        self._teacher = tea_name
+        self.teacher = tea_name
 
     def check_all_info(self):
         """
@@ -53,13 +53,13 @@ class Student:
             课程名称
             授课教师
         """
-        self._courses.append(course)
+        self.courses.append(course)
 
     def check_courses(self):
         """
         查看该学生所有课程
         """
-        print("{}选的课程有:{}".format(self.name, self._courses))
+        print("{}选的课程有:{}".format(self.name, self.courses))
 
 
 if __name__ == "__main__":
