@@ -92,7 +92,6 @@ if __name__ == "__main__":
         cou_6.append(course)
     print(cou_6, end="\n")  # 　打印6个课程信息
 
-    # stu_30 = [] #
     for i in range(1, 31):  # 创建30个学生
         # 注意一个学生需要三门随机课程,使用random
         course_3 = random.sample(cou_6, 3)  # 随机出三门课程
@@ -102,8 +101,6 @@ if __name__ == "__main__":
             address="小区{}".format(str(i)),
             courses=course_3
         )
-
-        # stu_30.append(student)
 
         # 最后直接打印这三十个学生的选课情况以及任课教师的电话
         print("{}的所选三门课程分别为:{}".format(
